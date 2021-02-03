@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Towers of Hanoi</title>
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="main.js" defer></script>
+
+</head>
+<body>
+  <div class="header">
+    <div class="board-buttons">
+      <div class="left-buttons button-box">
+        <button class="reset" disabled=true>Reset Game</button>
+      </div>
+      <div class="move-control button-box">
+        <button class="takeback" id="undo" disabled=true>↺</button>
+        <button class="takeback" id="redo" disabled=true>↻</button>
+      </div>
+      <div class="right-buttons button-box">
+        <button class="demo">Demo</button>
+      </div>
+    </div>
+
+    <div class="info">
+      <h1>Towers of Hannoi</h1>
+      <h2>Move all discs from tower 1 to tower 3</h2>
+    </div>
+
+    <div class="board-stuff">
+      <div class="scoreboard">
+        <h1>Score</h1>
+        <div class="score">0</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="board">
+    
+  </div>
+</body>
+</html>
