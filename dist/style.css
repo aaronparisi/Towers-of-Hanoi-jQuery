@@ -3,7 +3,7 @@ html {
   align-items: stretch;
   min-height: 100%;
   height: 100%;
-  background-color: #e0dec2;
+  background-color: white;
   font-family: 'Amatic SC', cursive;
   color: #4B4B4B; }
 
@@ -42,7 +42,7 @@ button:disabled {
 
 button {
   outline: none;
-  background-color: #bebda4;
+  background-color: #e0cf0b;
   color: #4B4B4B;
   font-size: 30px;
   padding: 10px;
@@ -103,7 +103,7 @@ button:enabled:hover {
   position: relative;
   width: 33.3333%;
   height: 100%;
-  background-color: #e0dec2; }
+  background-color: white; }
 
 .disc-container {
   z-index: 2;

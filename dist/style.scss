@@ -3,7 +3,8 @@ html {
   align-items: stretch;
   min-height: 100%;
   height: 100%;
-  background-color: rgb(224, 222, 194);
+  // background-color: rgb(224, 222, 194);
+  background-color: white;
   font-family: 'Amatic SC', cursive;
   color: #4B4B4B;
 }
@@ -51,7 +52,8 @@ button:disabled {
 
 button {
   outline: none;
-  background-color: rgb(190, 189, 164);
+  // background-color: rgb(190, 189, 164);
+  background-color: rgb(224, 207, 11);
   color: #4B4B4B;
   font-size: 30px;
   padding: 10px;
@@ -126,7 +128,8 @@ button:enabled:hover {
   position: relative;
   width: 33.3333%;
   height: 100%;
-  background-color: rgb(224, 222, 194);
+  // background-color: rgb(224, 222, 194);
+  background-color: white;
 }
 
 .disc-container {

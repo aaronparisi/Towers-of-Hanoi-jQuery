@@ -57,11 +57,12 @@ export function setupView() {
   }
 
   for (let i=0; i<8; i++) {
-    let multiplier = 18;
+    let multiplier = 15;
     let addr = 2;
     let $disc = $('<div></div>').addClass('disc').attr('id', `disc${i}`).data('discID', i);
     $disc.width(`${(i+1)*12 + 3}%`);
-    $disc.css('backgroundColor', `rgb(${224-((i+addr)*multiplier)}, ${222-((i+addr)*multiplier)}, ${194-((i+addr)*multiplier)})`);
+    // $disc.css('backgroundColor', `rgb(${224-((i+addr)*multiplier)}, ${222-((i+addr)*multiplier)}, ${194-((i+addr)*multiplier)})`);
+    $disc.css('backgroundColor', `rgb(${252-((i+addr)*multiplier)}, ${231-((i+addr)*multiplier)}, ${92-((i+addr)*multiplier)})`);
 
     $('#disc-container0').append($disc);
   }
