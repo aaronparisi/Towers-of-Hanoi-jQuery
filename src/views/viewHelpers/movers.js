@@ -33,7 +33,7 @@ export function moveDisc($disc, $targetContainer) {
     $disc.css('backgroundColor', `rgb(${187-((discID+2)*16)}, ${225-((discID+2)*16)}, ${207-((discID+2)*16)})`);
   } else {
     // $disc.removeClass('final-resting-place')
-    $disc.css('backgroundColor', `rgb(${224-((discID+2)*18)}, ${222-((discID+2)*18)}, ${194-((discID+2)*18)})`);
+    $disc.css('backgroundColor', `rgb(${252-((discID+2)*15)}, ${231-((discID+2)*15)}, ${92-((discID+2)*15)})`);
   }
 
   if (this.game.isOver()) {
