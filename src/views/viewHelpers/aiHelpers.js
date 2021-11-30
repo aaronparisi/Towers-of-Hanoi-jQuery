@@ -96,6 +96,7 @@ export function toggleDemo() {
     this.startDemo();
   }
 }
+
 // todo make these more elegant
 export function isNotTopDisc(discIdx) {
   return (
@@ -112,15 +113,3 @@ export function hasNoMoves(discIdx) {
     this.game.board.containers[2][0].discID >= discIdx
   )
 }
-
-export function dumbToMove(discIdx) {
-  // rebuilds opening tower??
-  // unbuilds 'move out of the way' tower???
-}
-
-/*
-think in terms of move preferences
-- first preference is to move on top of next biggest guy
-- then to move to open space (which one??)
-- then to move onto the tower with the greatest size discrepancy
-*/

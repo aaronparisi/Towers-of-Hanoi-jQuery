@@ -25,14 +25,12 @@ export function moveDisc($disc, $targetContainer) {
   this.updateUndoRedoButtons();
 
   // update buttons
-  this.$resetButton.attr('disabled', false);
-  this.$demoButton.attr('disabled', false).html('Run Demo');  // ! this needs to be fixed
+  $('.reset').attr('disabled', false);
+  $('.demo').attr('disabled', false).html('Pause');
 
   if (this.discInFinalRestingPlace($disc.data('discID'), $targetContainer.data('containerID'))) {
-    // $disc.addClass('final-resting-place')
     $disc.css('backgroundColor', `rgb(${187-((discID+2)*16)}, ${225-((discID+2)*16)}, ${207-((discID+2)*16)})`);
   } else {
-    // $disc.removeClass('final-resting-place')
     $disc.css('backgroundColor', `rgb(${252-((discID+2)*15)}, ${231-((discID+2)*15)}, ${92-((discID+2)*15)})`);
   }
 

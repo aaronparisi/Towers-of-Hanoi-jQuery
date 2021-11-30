@@ -16,6 +16,6 @@ export function redoMove() {
 }
 
 export function updateUndoRedoButtons() {
-  this.$undoButton.attr( 'disabled', ( ! this.game.hasMovesToUndo() ) )
-  this.$redoButton.attr( 'disabled', ( ! this.game.hasMovesToRedo() ) )
+  $('#undo').attr( 'disabled', ( ! this.game.hasMovesToUndo() ) )
+  $('#redo').attr( 'disabled', ( ! this.game.hasMovesToRedo() ) )
 }

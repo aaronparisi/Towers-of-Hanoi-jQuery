@@ -5,20 +5,11 @@ export function resetGame() {
   this.game = new Game();
   this.AIPlayer = new AIPlayer(this);
 
-  this.$boardEl = $('.board')  // a jQuery object from the HTML
-
-  this.$resetButton = $('.reset')
-  this.$undoButton = $('#undo')
-  this.$redoButton = $('#redo')
-  this.$demoButton = $('.demo')
-
-  this.$scoreSlot = $('.score');
-
-  $('button').not(this.$demoButton).attr('disabled', true);
+  $('button').not($('.demo')).attr('disabled', true);
   $('.demo').html('Run Demo').attr('disabled', false);
   $('body').removeClass('disc-selected');
 
-  this.$boardEl.html("");
+  $('.board').html("");
   this.updateScoreView();
 
   this.setupView();
@@ -26,7 +17,7 @@ export function resetGame() {
 }
 
 export function updateScoreView() {
-  this.$scoreSlot.html(this.game.score);
+  $('.score').html(this.game.score);
 }
 
 export function genTowerImgDiv() {
@@ -53,15 +44,15 @@ export function setupView() {
     $towerDiv.append($discContainerDiv);
     $towerDiv.append($towerImgDiv);
 
-    this.$boardEl.append($towerDiv);
+    $('.board').append($towerDiv);
   }
 
   for (let i=0; i<8; i++) {
     let multiplier = 15;
     let addr = 2;
     let $disc = $('<div></div>').addClass('disc').attr('id', `disc${i}`).data('discID', i);
+    
     $disc.width(`${(i+1)*12 + 3}%`);
-    // $disc.css('backgroundColor', `rgb(${224-((i+addr)*multiplier)}, ${222-((i+addr)*multiplier)}, ${194-((i+addr)*multiplier)})`);
     $disc.css('backgroundColor', `rgb(${252-((i+addr)*multiplier)}, ${231-((i+addr)*multiplier)}, ${92-((i+addr)*multiplier)})`);
 
     $('#disc-container0').append($disc);

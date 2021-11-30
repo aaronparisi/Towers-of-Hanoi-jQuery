@@ -37,7 +37,6 @@ export function containerDiscCount(contID) {
 
 export function isOver() {
   return this.game.isOver();
-  // return true;  // ! just for testing purposes
 }
 
 export function hasMovesToUndo() {

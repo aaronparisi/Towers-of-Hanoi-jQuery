@@ -4,7 +4,7 @@ import { getContainerByID, getDiscByID } from './viewHelpers/getters.js';
 import { targetSelected, moveDisc, completeMove } from './viewHelpers/movers.js';
 import { discIsSelected, genDiscShadow, toggleDiscSelect, toggleTargetHover, toggleValidTargets } from './viewHelpers/discSelection.js';
 import { redoMove, undoMove, undoRedo, updateUndoRedoButtons } from './viewHelpers/undoRedo.js';
-import { pauseDemo, startDemo, runDemo, endDemo, runAILoop, showPausedDemoView, showRunningDemoView, toggleDemo, waitDelay, redoDemoMove, isNotTopDisc, hasNoMoves, dumbToMove } from './viewHelpers/aiHelpers.js';
+import { pauseDemo, startDemo, runDemo, endDemo, runAILoop, showPausedDemoView, showRunningDemoView, toggleDemo, waitDelay, redoDemoMove, isNotTopDisc, hasNoMoves } from './viewHelpers/aiHelpers.js';
 import { containerDiscCount, containerHasDisc, containerIsEmpty, containerTopDisc, findContainerByDiscID, hasMovesToUndo, hasMovesToRedo, isOver, isValidMove, containerIsCompatible, containerBottomDisc, discBelowMe, discInFinalRestingPlace } from './viewHelpers/gameViewGameInterface.js';
 
 export function GameView() {
@@ -78,7 +78,6 @@ GameView.prototype.runAILoop = runAILoop;
 GameView.prototype.toggleDemo = toggleDemo;
 GameView.prototype.isNotTopDisc = isNotTopDisc;
 GameView.prototype.hasNoMoves = hasNoMoves;
-GameView.prototype.dumbToMove = dumbToMove
 
 GameView.prototype.myDisableToggle = function(bool, ...objs) {  // ! i'm not sure if I even use this
   objs.forEach(obj => {

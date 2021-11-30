@@ -4,6 +4,7 @@ export function bindEvents() {
   $('*').off('click');
   $('*').off('mouseenter');
   $('*').off('mouseleave');  // todo maybe don't just reset the entire game when you click the reset button??
+
   // selecting discs
   $('.disc-container').on({
     mouseenter: function(event) {
@@ -46,6 +47,7 @@ export function bindEvents() {
   })
 
   $('.demo').on('click', function(event) {
+    console.log(myThis)
     myThis.toggleDemo();
   })
 }

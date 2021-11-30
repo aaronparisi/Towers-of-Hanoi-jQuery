@@ -48,7 +48,6 @@ Game.prototype.containerDiscCount = function(contID) {
 
 Game.prototype.isOver = function() {
   return this.board.containerDiscCount(2) === 8;
-  // return true;  // ! just for testing purposes
 }
 
 Game.prototype.moveDisc = function(fromContID, toContID) {
@@ -65,7 +64,6 @@ Game.prototype.moveDisc = function(fromContID, toContID) {
       "discID": this.board.containerTopDisc(toContID),  // at this point, the moved discID lives on top of the "to container"
       "sourceID": fromContID,
       "destinationID": toContID,
-      // "boardState": getCurrentBoardState()  // ? what did I use this for again??
     }
   )
   this.moveIdx++;
